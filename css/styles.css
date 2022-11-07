@@ -1,19 +1,9 @@
-.blue {
-  background-image: url('../img/blue_background.png');
-  height: 50%;
-  background-size: 200% auto;
-  min-height: 400px;
-}
-
-.grey {
-  background-image: url('../img/grey_background.png');
-  height: 50%;
-  background-size: 200% auto;
-  min-height: 400px;
-}
-
 .video {
   height: 250px;
+}
+
+.blue {
+  height: 50%;
 }
 
 .blue a {
@@ -21,7 +11,7 @@
   color: #fff;
   padding: 0.5em 2em;
   border-radius: 35px;
-  margin: 4em auto;
+  margin: 6em auto;
   display: block;
   text-align: center;
   width: calc(80% - 80px);
@@ -33,7 +23,7 @@
 
 .logo-wrapper {
   padding: 1em;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .logo-wrapper img {
@@ -48,6 +38,10 @@
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
+  background-image: url('../img/background.png');
+  background-size: 200% auto;
+  background-repeat: no-repeat;
+  background-position: 100% 33%;
 }
 
 .arrow {
@@ -55,7 +49,7 @@
   border-radius: 50%;
   position: absolute;
   width: 4em;
-  top: 370px;
+  top: 48%;
   height: 4em;
   left: 45%;
 }
@@ -88,6 +82,15 @@
   .logo-wrapper {
     margin-top: 0.5em;
   }
+
+  .wrapper {
+    background-position: 100% 25%;
+    background-size: 100% auto;
+  }
+
+  .arrow {
+    top: 50%
+  }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -113,17 +116,15 @@
 
   .arrow {
     left: 49%;
+    top: 52%;
   }
 
   .blue a {
     width: calc(40% - 80px);
   }
 
-  .grey {
-    background-size: 100% auto;
-  }
-
-  .blue {
+  .wrapper {
+    background-position: 100% 45%;
     background-size: 100% auto;
   }
 
